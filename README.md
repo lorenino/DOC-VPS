@@ -10,52 +10,52 @@ docker container
 
 ### Get Images
 
-Rechercher 
+#### Rechercher 
 
 docker search <image>
 
-Download
+#### Download
 
 docker pull <nom de l’image>
 
-Delete 
+#### Delete 
 
 docker rmi <nom de l’image>
 
 ### Get Container
 
-Listing 
+#### Listing 
 
 docker ps -a
 
-Launch 
+#### Launch 
 
-p
+#### p
 docker run <nom de l’image>
 
-i
+#### i
 docker run -d <nom de l’image> tail -f /dev/null
 
-Go in 
+#### Go in 
 
 docker exec -it <id du conteneur> bin/bash
 
-Start/Stop
+#### Start/Stop
 
 docker stop <id du conteneur>
 docker start <id du conteneur>
 
-Delete 
+#### Delete 
 
 docker rm <id du conteneur>
 
 ### Action on File 
 
-cp/p
+#### cp/p
 
 docker cp <nom du fichier> <id du conteneur>:/< nom du fichier >
 
-run a file in a container or image
+#### run a file in a container or image
 
 docker exec -it <id> python /<nom du fichier> <Phrase de test>
 
